@@ -1,0 +1,71 @@
+#wolfys-head {
+  background-image: url('../img/img_wolfys_1080x1440.jpg');
+  height: calc(1440px / 8);
+  width: calc(1080px / 8);
+  background-size: calc(1080px / 8) calc(1440px / 8);
+  position: relative;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+
+@keyframes toGray {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0%;
+  }
+}
+
+#wolfys-head-color {
+  background-image: url('../img/img_wolfys_1080x1440_color.jpg');
+  height: calc(1440px / 8);
+  width: calc(1080px / 8);
+  background-size: calc(1080px / 8) calc(1440px / 8);
+  position: absolute;
+  z-index: 100;
+  left: 50%;
+  transform: translate(-50%,0);
+  animation: toGray 5s;
+  animation-fill-mode: forwards;
+}
+
+
+* {
+  font-family: helvatica,arial;
+}
+
+#wolfys-name {
+  font-family: helvatica,arial;
+  text-align: center;
+}
+
+h1 {
+  margin: 16px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+#birth-die {
+  color: gray;
+  margin: 0px;
+}
+
+#wolfys-introduction {
+  font-family: helvatica,arial;
+  margin-top: 20px;
+  line-height: 30px;
+}
+
+a[href] {
+  color: pink;
+  text-decoration: none;
+}
+a[href]:hover {
+  color: cyan;
+}
+
+#wolfys-links {
+  text-align: center;
+  line-height: 30px;
+}
