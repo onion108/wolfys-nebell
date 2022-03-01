@@ -35,6 +35,10 @@
   font-family: helvatica,arial;
 }
 
+html {
+  margin: 0;
+}
+
 #wolfys-name {
   font-family: helvatica,arial;
   text-align: center;
@@ -105,3 +109,39 @@ a[href]:hover {
 #icon-1a-wrapper {
   width: 100%;
 }
+
+#cover {
+  position: sticky;
+  background-color: black;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 10000000;
+  color: rgb(170, 170, 170);
+}
+
+.hidden {
+  display: none;
+  pointer-events: none;
+}
+
+#picture {
+  background-image: url('../img/img_wolfys_1080x1440.jpg');
+  height: calc(1440px / 8);
+  width: calc(1080px / 8);
+  background-size: calc(1080px / 8) calc(1440px / 8);
+  position: relative;
+  left: 50%;
+  transform: translate(-50%,0);
+  border-radius: 5px;
+}
+
+#c_centered {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
